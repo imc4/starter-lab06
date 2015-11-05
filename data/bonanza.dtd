@@ -3,8 +3,8 @@
 Order Placement data for Barker Bob's Burger Bar's Bigger, Better Burer Bonanza
 -->
 
-<!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT __ROOT__ ANY>
+<!-- An order identifies the customer, order type, burgers, and anything special -->
+<!ELEMENT order (customer, delivery?, burger+, special?)>
 
 <!-- A customer is identiified simply by their name -->
 <!ELEMENT customer (#PCDATA)>
@@ -20,9 +20,6 @@ Order Placement data for Barker Bob's Burger Bar's Bigger, Better Burer Bonanza
 <!-- Let's provide for any special instructions -->
 <!ELEMENT special (#PCDATA)>
 
-<!-- The burgers will be specified individually -->
-<!ELEMENT burger (#PCDATA)>
-
 <!-- The burgers will be specified individually
 Burger customization...
 - 1 of 5 patty tpes
@@ -32,7 +29,7 @@ Burger customization...
 - special instructions
 - an optional name, should the customer wish to propose this as a menu item
 -->
-<!ELEMENT burger (patty, cheese, toppings, sauce, instructions?, name?)>
+<!ELEMENT burger (patty, cheeses?, topping*, sauce*, instructions?, name?)>
 
 <!-- A patty can be one of five types (assume beef), and might be named explicitly -->
 <!ELEMENT patty (#PCDATA)>
