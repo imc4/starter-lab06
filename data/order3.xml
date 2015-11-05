@@ -12,11 +12,10 @@ and open the template in the editor.
     <burger>
         <patty type="beef"/>
         <cheeses top="swiss" bottom="swiss"/>
-        <topping type="lettuce"/>
-        <topping type="tomato"/>
         <topping type="porkbelly"/>
         <topping type="peanutbutter"/>
         <sauce type="mayo"/>
         <sauce type="fksauce"/>
+        <instructions>Give me peanut butter dude!</instructions>
     </burger>
 </order>
