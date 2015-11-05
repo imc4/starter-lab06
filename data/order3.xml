@@ -15,6 +15,7 @@ and open the template in the editor.
         <topping type="lettuce"/>
         <topping type="tomato"/>
         <topping type="porkbelly"/>
+        <topping type="peanutbutter"/>
         <sauce type="mayo"/>
         <sauce type="fksauce"/>
     </burger>
